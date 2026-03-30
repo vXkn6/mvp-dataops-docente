@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: mvp-dataops-docente
+    runtime: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /health
