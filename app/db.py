@@ -23,7 +23,7 @@ def test_connection():
     try:
         with psycopg.connect(**params) as conn:
             with conn.cursor() as cur:
-                cur.execute("select version^(^);")
+                cur.execute("select version();")
                 version = cur.fetchone()[0]
         return {"status": "ok", "detail": "Conexion exitosa", "db_version": version}
     except Exception as e:
