@@ -1,0 +1,60 @@
+{
+  "accuracy": 0.8456919843890723,
+  "confusion_matrix": [
+    [
+      2321,
+      353
+    ],
+    [
+      161,
+      496
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.935132957292506,
+      "recall": 0.8679880329094989,
+      "f1-score": 0.9003103180760279,
+      "support": 2674.0
+    },
+    "1": {
+      "precision": 0.5842167255594818,
+      "recall": 0.7549467275494672,
+      "f1-score": 0.6586985391766268,
+      "support": 657.0
+    },
+    "accuracy": 0.8456919843890723,
+    "macro avg": {
+      "precision": 0.759674841425994,
+      "recall": 0.8114673802294831,
+      "f1-score": 0.7795044286263273,
+      "support": 3331.0
+    },
+    "weighted avg": {
+      "precision": 0.8659189181905556,
+      "recall": 0.8456919843890723,
+      "f1-score": 0.8526552779268516,
+      "support": 3331.0
+    }
+  },
+  "train_rows": 13320,
+  "test_rows": 3331,
+  "categorical_features": [
+    "sexo",
+    "carrera",
+    "facultad",
+    "grupo_depen",
+    "region",
+    "pace",
+    "gratuidad"
+  ],
+  "numeric_features": [
+    "periodo",
+    "preferencia",
+    "puntaje",
+    "latitud",
+    "longitud",
+    "ptje_nem",
+    "psu_promlm"
+  ]
+}

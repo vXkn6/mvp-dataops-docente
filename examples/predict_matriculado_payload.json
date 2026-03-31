@@ -1,0 +1,16 @@
+{
+  "periodo": 2024,
+  "sexo": "F",
+  "preferencia": 1,
+  "carrera": "INGENIERIA CIVIL INFORMATICA",
+  "facultad": "INGENIERIA",
+  "puntaje": 780,
+  "grupo_depen": "PARTICULAR SUBVENCIONADO",
+  "region": "VALPARAISO",
+  "latitud": -33.0472,
+  "longitud": -71.6127,
+  "ptje_nem": 800,
+  "psu_promlm": 760,
+  "pace": "NO",
+  "gratuidad": "SI"
+}
