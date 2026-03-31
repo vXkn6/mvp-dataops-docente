@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException, Query
-from app.db import test_connection, get_postulaciones
+from app.db import test_connection, get_postulaciones, get_postulaciones_stats
 
 app = FastAPI(title="MVP DataOps Docente")
 
@@ -24,6 +24,17 @@ def postulaciones_demo(limit: int = Query(default=20, ge=1, le=100)):
             "count": len(data),
             "limit": limit,
             "data": data
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/postulaciones-demo/stats")
+def postulaciones_demo_stats():
+    try:
+        stats = get_postulaciones_stats()
+        return {
+            "status": "ok",
+            "stats": stats
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
