@@ -15,6 +15,7 @@ Contar con una base técnica simple y replicable para que los grupos de estudian
 
 ## Arquitectura del MVP
 La solución implementa una arquitectura IA híbrida simple:
+![Arquitectura del MVP](images/Arquitectura.png)
 - Aplicación Python dockerizada
 - API con FastAPI
 - CI/CD con GitHub Actions
